@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.svg">
+</head>
+<body>
+    <div id="container">
+        <div id="window-controls">
+            <div id="minimize-button" title="Minimize"></div>
+            <div id="maximize-button" title="Maximize"></div>
+            <div id="close-button" title="Close"></div>
+        </div>
+        <div id="about-control">
+            <div id="about-button" title="About"></div>
+        </div>
+        <h1 id="title">Typewriter</h1>
+        <div id="stats">
+            <div>Time Spent: <span id="timer">00:00</span></div>
+            <div>Accuracy: <span id="accuracy">0%</span></div>
+            <div>Typing Speed: <span id="typing-speed">0</span> Words/Minute</div>
+        </div>
+        <div id="textContainer">
+            <div id="textDisplay"></div>
+            <textarea id="inputText" placeholder="Type here..." oninput="checkInput()"></textarea>
+        </div>
+        <div id="modal">
+            <div id="modal-content">
+                <div id="modal-close-button" title="Close"></div>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
